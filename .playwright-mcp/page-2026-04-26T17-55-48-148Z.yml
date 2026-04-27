@@ -1,0 +1,134 @@
+- generic [ref=e3]:
+  - navigation [ref=e4]:
+    - generic [ref=e5]:
+      - generic [ref=e6]: ⬡
+      - generic [ref=e7]: Page Builder
+    - generic [ref=e8]:
+      - button [ref=e9]:
+        - img [ref=e10]
+      - button [ref=e12]:
+        - img [ref=e13]
+      - button [ref=e15]:
+        - img [ref=e16]
+    - generic [ref=e18]:
+      - generic [ref=e19]:
+        - button [disabled] [ref=e20]:
+          - img [ref=e21]
+        - button [disabled] [ref=e23]:
+          - img [ref=e24]
+      - button "Preview" [ref=e26] [cursor=pointer]
+      - button "Publish" [ref=e27] [cursor=pointer]
+  - generic [ref=e28]:
+    - complementary [ref=e29]:
+      - tablist "Builder panels" [ref=e33]:
+        - tab "Blocks" [ref=e34] [cursor=pointer]
+        - tab "Design" [ref=e36] [cursor=pointer]
+        - tab "Templates" [active] [selected] [ref=e37] [cursor=pointer]: Templates
+      - generic [ref=e286]:
+        - paragraph [ref=e287]: Choose a template to start with. This will replace your current layout.
+        - generic [ref=e288]:
+          - button "🖥️ SaaS Landing saas Use →" [ref=e289]:
+            - generic [ref=e291]: 🖥️
+            - generic [ref=e292]:
+              - generic [ref=e293]:
+                - paragraph [ref=e294]: SaaS Landing
+                - paragraph [ref=e295]: saas
+              - generic [ref=e296]: Use →
+          - button "🖥️ Portfolio portfolio Use →" [ref=e297]:
+            - generic [ref=e299]: 🖥️
+            - generic [ref=e300]:
+              - generic [ref=e301]:
+                - paragraph [ref=e302]: Portfolio
+                - paragraph [ref=e303]: portfolio
+              - generic [ref=e304]: Use →
+          - button "🖥️ Business business Use →" [ref=e305]:
+            - generic [ref=e307]: 🖥️
+            - generic [ref=e308]:
+              - generic [ref=e309]:
+                - paragraph [ref=e310]: Business
+                - paragraph [ref=e311]: business
+              - generic [ref=e312]: Use →
+          - button "🖥️ Startup saas Use →" [ref=e313]:
+            - generic [ref=e315]: 🖥️
+            - generic [ref=e316]:
+              - generic [ref=e317]:
+                - paragraph [ref=e318]: Startup
+                - paragraph [ref=e319]: saas
+              - generic [ref=e320]: Use →
+    - generic [ref=e83]:
+      - generic [ref=e84]:
+        - generic [ref=e85]:
+          - generic [ref=e86]:
+            - button [ref=e87]:
+              - img [ref=e88]
+            - button [ref=e90]:
+              - img [ref=e91]
+          - generic [ref=e94] [cursor=pointer]:
+            - generic [ref=e95]: navbar
+            - generic [ref=e96]:
+              - generic [ref=e97]: Acme
+              - generic [ref=e98]:
+                - generic [ref=e99]: Features
+                - generic [ref=e100]: Pricing
+                - generic [ref=e101]: About
+                - button "Sign Up" [ref=e102]
+        - generic [ref=e103]:
+          - generic [ref=e104]:
+            - button [ref=e105]:
+              - img [ref=e106]
+            - button [ref=e108]:
+              - img [ref=e109]
+          - generic [ref=e112] [cursor=pointer]:
+            - generic [ref=e113]: hero
+            - generic [ref=e114]:
+              - heading "Build beautiful websites in minutes" [level=1] [ref=e115]
+              - paragraph [ref=e116]: The modern page builder that lets you create stunning pages with drag and drop.
+              - button "Get Started" [ref=e117]
+        - generic [ref=e118]:
+          - generic [ref=e119]:
+            - button [ref=e120]:
+              - img [ref=e121]
+            - button [ref=e123]:
+              - img [ref=e124]
+          - generic [ref=e127] [cursor=pointer]:
+            - generic [ref=e128]: features
+            - generic [ref=e129]:
+              - heading "Everything you need" [level=2] [ref=e130]
+              - generic [ref=e131]:
+                - generic [ref=e132]:
+                  - generic [ref=e133]: ⚡
+                  - generic [ref=e134]:
+                    - heading "Fast" [level=3] [ref=e135]
+                    - paragraph [ref=e136]: Lightning fast performance
+                - generic [ref=e137]:
+                  - generic [ref=e138]: 🎨
+                  - generic [ref=e139]:
+                    - heading "Beautiful" [level=3] [ref=e140]
+                    - paragraph [ref=e141]: Stunning designs out of the box
+                - generic [ref=e142]:
+                  - generic [ref=e143]: 📱
+                  - generic [ref=e144]:
+                    - heading "Responsive" [level=3] [ref=e145]
+                    - paragraph [ref=e146]: Looks great on every device
+        - generic [ref=e147]:
+          - generic [ref=e148]:
+            - button [ref=e149]:
+              - img [ref=e150]
+            - button [ref=e152]:
+              - img [ref=e153]
+          - generic [ref=e156] [cursor=pointer]:
+            - generic [ref=e157]: cta
+            - generic [ref=e158]:
+              - heading "Ready to get started?" [level=2] [ref=e159]
+              - paragraph [ref=e160]: Join thousands of creators building with our platform.
+              - button "Start Building" [ref=e161]
+        - generic [ref=e162]:
+          - generic [ref=e163]:
+            - button [ref=e164]:
+              - img [ref=e165]
+            - button [ref=e167]:
+              - img [ref=e168]
+          - generic [ref=e171] [cursor=pointer]:
+            - generic [ref=e172]: footer
+            - paragraph [ref=e174]: © 2026 Acme Inc. All rights reserved.
+      - status [ref=e175]

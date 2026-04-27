@@ -1,0 +1,173 @@
+- generic [ref=e1]:
+  - generic [ref=e3]:
+    - navigation [ref=e4]:
+      - generic [ref=e5]:
+        - generic [ref=e6]: ⬡
+        - generic [ref=e7]: Page Builder
+      - generic [ref=e8]:
+        - button [ref=e9]:
+          - img [ref=e10]
+        - button [ref=e12]:
+          - img [ref=e13]
+        - button [ref=e15]:
+          - img [ref=e16]
+      - generic [ref=e18]:
+        - generic [ref=e19]:
+          - button [disabled] [ref=e20]:
+            - img [ref=e21]
+          - button [disabled] [ref=e23]:
+            - img [ref=e24]
+        - button "Preview" [ref=e26] [cursor=pointer]
+        - button "Publish" [ref=e27] [cursor=pointer]
+    - generic [ref=e28]:
+      - complementary [ref=e29]:
+        - tablist "Builder panels" [ref=e33]:
+          - tab "Blocks" [selected] [ref=e34] [cursor=pointer]: Blocks
+          - tab "Design" [ref=e36] [cursor=pointer]
+          - tab "Templates" [ref=e37] [cursor=pointer]
+        - generic [ref=e39]:
+          - generic [ref=e40]:
+            - heading "layout" [level=3] [ref=e41]
+            - generic [ref=e42]:
+              - button "☰ Navigation" [ref=e43]:
+                - generic [ref=e44]: ☰
+                - generic [ref=e45]: Navigation
+              - button "🚀 Hero Section" [ref=e46]:
+                - generic [ref=e47]: 🚀
+                - generic [ref=e48]: Hero Section
+              - button "↕️ Spacer" [ref=e49]:
+                - generic [ref=e50]: ↕️
+                - generic [ref=e51]: Spacer
+              - button "➖ Divider" [ref=e52]:
+                - generic [ref=e53]: ➖
+                - generic [ref=e54]: Divider
+              - button "📋 Footer" [ref=e55]:
+                - generic [ref=e56]: 📋
+                - generic [ref=e57]: Footer
+          - generic [ref=e58]:
+            - heading "content" [level=3] [ref=e59]
+            - generic [ref=e60]:
+              - button "✨ Features" [ref=e61]:
+                - generic [ref=e62]: ✨
+                - generic [ref=e63]: Features
+              - button "💬 Testimonials" [ref=e64]:
+                - generic [ref=e65]: 💬
+                - generic [ref=e66]: Testimonials
+              - button "💰 Pricing" [ref=e67]:
+                - generic [ref=e68]: 💰
+                - generic [ref=e69]: Pricing
+              - button "📢 Call to Action" [ref=e70]:
+                - generic [ref=e71]: 📢
+                - generic [ref=e72]: Call to Action
+              - button "📝 Text Block" [ref=e73]:
+                - generic [ref=e74]: 📝
+                - generic [ref=e75]: Text Block
+          - generic [ref=e76]:
+            - heading "media" [level=3] [ref=e77]
+            - button "🖼️ Image" [ref=e79]:
+              - generic [ref=e80]: 🖼️
+              - generic [ref=e81]: Image
+      - generic [ref=e83]:
+        - generic [ref=e84]:
+          - generic [ref=e85]:
+            - generic [ref=e86]:
+              - button [ref=e87]:
+                - img [ref=e88]
+              - button [ref=e90]:
+                - img [ref=e91]
+            - generic [ref=e94] [cursor=pointer]:
+              - generic [ref=e95]: navbar
+              - generic [ref=e96]:
+                - generic [ref=e97]: Acme
+                - generic [ref=e98]:
+                  - generic [ref=e99]: Features
+                  - generic [ref=e100]: Pricing
+                  - generic [ref=e101]: About
+                  - button "Sign Up" [ref=e102]
+          - generic [ref=e103]:
+            - generic [ref=e104]:
+              - button [ref=e105]:
+                - img [ref=e106]
+              - button [ref=e108]:
+                - img [ref=e109]
+            - generic [ref=e112] [cursor=pointer]:
+              - generic [ref=e113]: hero
+              - generic [ref=e114]:
+                - heading "Build beautiful websites in minutes" [level=1] [ref=e115]
+                - paragraph [ref=e116]: The modern page builder that lets you create stunning pages with drag and drop.
+                - button "Get Started" [ref=e117]
+          - generic [ref=e118]:
+            - generic [ref=e119]:
+              - button [ref=e120]:
+                - img [ref=e121]
+              - button [ref=e123]:
+                - img [ref=e124]
+            - generic [ref=e127] [cursor=pointer]:
+              - generic [ref=e128]: features
+              - generic [ref=e129]:
+                - heading "Everything you need" [level=2] [ref=e130]
+                - generic [ref=e131]:
+                  - generic [ref=e132]:
+                    - generic [ref=e133]: ⚡
+                    - generic [ref=e134]:
+                      - heading "Fast" [level=3] [ref=e135]
+                      - paragraph [ref=e136]: Lightning fast performance
+                  - generic [ref=e137]:
+                    - generic [ref=e138]: 🎨
+                    - generic [ref=e139]:
+                      - heading "Beautiful" [level=3] [ref=e140]
+                      - paragraph [ref=e141]: Stunning designs out of the box
+                  - generic [ref=e142]:
+                    - generic [ref=e143]: 📱
+                    - generic [ref=e144]:
+                      - heading "Responsive" [level=3] [ref=e145]
+                      - paragraph [ref=e146]: Looks great on every device
+          - generic [ref=e147]:
+            - generic [ref=e148]:
+              - button [ref=e149]:
+                - img [ref=e150]
+              - button [ref=e152]:
+                - img [ref=e153]
+            - generic [ref=e156] [cursor=pointer]:
+              - generic [ref=e157]: cta
+              - generic [ref=e158]:
+                - heading "Ready to get started?" [level=2] [ref=e159]
+                - paragraph [ref=e160]: Join thousands of creators building with our platform.
+                - button "Start Building" [ref=e161]
+          - generic [ref=e162]:
+            - generic [ref=e163]:
+              - button [ref=e164]:
+                - img [ref=e165]
+              - button [ref=e167]:
+                - img [ref=e168]
+            - generic [ref=e171] [cursor=pointer]:
+              - generic [ref=e172]: footer
+              - paragraph [ref=e174]: © 2026 Acme Inc. All rights reserved.
+        - status [ref=e175]
+  - generic [ref=e176]:
+    - generic:
+      - generic:
+        - button "Dismiss"
+      - dialog "🚀 Hero Section" [active] [ref=e177]:
+        - button "Close" [ref=e178] [cursor=pointer]:
+          - img
+        - heading "🚀 Hero Section" [level=2] [ref=e180]:
+          - generic [ref=e181]: 🚀
+          - text: Hero Section
+        - generic [ref=e183]:
+          - generic [ref=e184]:
+            - generic [ref=e185]: Headline
+            - textbox "Headline" [ref=e186]:
+              - /placeholder: Enter headline...
+              - text: Build beautiful websites in minutes
+          - generic [ref=e187]:
+            - generic [ref=e188]: Subtitle
+            - textbox "Subtitle" [ref=e189]:
+              - /placeholder: Enter subtitle...
+              - text: The modern page builder that lets you create stunning pages with drag and drop.
+          - generic [ref=e190]:
+            - generic [ref=e191]: Button Text
+            - textbox "Button Text" [ref=e192]:
+              - /placeholder: Get Started
+              - text: Get Started
+        - button "Done" [ref=e194] [cursor=pointer]

@@ -1,0 +1,217 @@
+- generic [ref=e2]:
+  - generic [ref=e3]:
+    - navigation [ref=e4]:
+      - generic [ref=e5]:
+        - generic [ref=e6]: ⬡
+        - generic [ref=e7]: Page Builder
+        - button [ref=e9]:
+          - img [ref=e10]
+        - button [ref=e12]:
+          - img [ref=e13]
+      - generic [ref=e15]:
+        - generic [ref=e16]:
+          - button [disabled] [ref=e17]:
+            - img [ref=e18]
+          - button [disabled] [ref=e20]:
+            - img [ref=e21]
+        - generic [ref=e23]:
+          - button [ref=e24]:
+            - img [ref=e25]
+          - button [ref=e27]:
+            - img [ref=e28]
+          - button [ref=e30]:
+            - img [ref=e31]
+      - generic [ref=e33]:
+        - generic [ref=e34]:
+          - button "EN" [ref=e35]
+          - button "AR" [ref=e36]
+        - button [ref=e37]:
+          - img [ref=e38]
+        - button "Preview" [ref=e41] [cursor=pointer]
+        - button "Publish" [ref=e42] [cursor=pointer]
+    - generic [ref=e43]:
+      - complementary [ref=e44]:
+        - tablist "Builder panels" [ref=e48]:
+          - tab "Blocks" [selected] [ref=e49] [cursor=pointer]: Blocks
+          - tab "UI" [ref=e51] [cursor=pointer]
+          - tab "Design" [ref=e52] [cursor=pointer]
+          - tab "Templates" [ref=e53] [cursor=pointer]
+        - generic [ref=e55]:
+          - paragraph [ref=e56]: Drag blocks onto the canvas to build your page.
+          - generic [ref=e57]:
+            - button "📐 Sections (14)" [ref=e58]:
+              - generic [ref=e59]:
+                - generic [ref=e60]: 📐
+                - text: Sections
+                - generic [ref=e61]: (14)
+              - img [ref=e62]
+            - generic [ref=e66]:
+              - button "Navigation" [ref=e67]:
+                - generic [ref=e74]: Navigation
+              - button "Hero" [ref=e75]:
+                - generic [ref=e80]: Hero
+              - button "Features" [ref=e81]:
+                - generic [ref=e92]: Features
+              - button "\" Testimonials" [ref=e93]:
+                - generic [ref=e95]: "\""
+                - generic [ref=e99]: Testimonials
+              - button "Pricing" [ref=e100]:
+                - generic [ref=e105]: Pricing
+              - button "99 99 99 Stats" [ref=e106]:
+                - generic [ref=e107]:
+                  - generic [ref=e109]: "99"
+                  - generic [ref=e112]: "99"
+                  - generic [ref=e115]: "99"
+                - generic [ref=e117]: Stats
+              - button "👥 Team" [ref=e118]:
+                - generic [ref=e120]: 👥
+                - generic [ref=e121]: Team
+              - button "FAQ" [ref=e122]:
+                - generic [ref=e130]: FAQ
+              - button "Call to Action" [ref=e131]:
+                - generic [ref=e135]: Call to Action
+              - button "✉️ Contact" [ref=e136]:
+                - generic [ref=e138]: ✉️
+                - generic [ref=e139]: Contact
+              - button "🏢 Logo Cloud" [ref=e140]:
+                - generic [ref=e142]: 🏢
+                - generic [ref=e143]: Logo Cloud
+              - button "🎯 Banner" [ref=e144]:
+                - generic [ref=e146]: 🎯
+                - generic [ref=e147]: Banner
+              - button "🖼️ Gallery" [ref=e148]:
+                - generic [ref=e150]: 🖼️
+                - generic [ref=e151]: Gallery
+              - button "Footer" [ref=e152]:
+                - generic [ref=e158]: Footer
+          - generic [ref=e159]:
+            - button "📝 Content (4)" [ref=e160]:
+              - generic [ref=e161]:
+                - generic [ref=e162]: 📝
+                - text: Content
+                - generic [ref=e163]: (4)
+              - img [ref=e164]
+            - generic [ref=e166]:
+              - button "📝 Text" [ref=e167]:
+                - generic [ref=e169]: 📝
+                - generic [ref=e170]: Text
+              - button "🔘 Buttons" [ref=e171]:
+                - generic [ref=e173]: 🔘
+                - generic [ref=e174]: Buttons
+              - button "💻 Code" [ref=e175]:
+                - generic [ref=e177]: 💻
+                - generic [ref=e178]: Code
+              - button "🧩 HTML Embed" [ref=e179]:
+                - generic [ref=e181]: 🧩
+                - generic [ref=e182]: HTML Embed
+          - generic [ref=e183]:
+            - button "▥ Layout (3)" [ref=e184]:
+              - generic [ref=e185]:
+                - generic [ref=e186]: ▥
+                - text: Layout
+                - generic [ref=e187]: (3)
+              - img [ref=e188]
+            - generic [ref=e190]:
+              - button "▥ Columns" [ref=e191]:
+                - generic [ref=e193]: ▥
+                - generic [ref=e194]: Columns
+              - button "↕️ Spacer" [ref=e195]:
+                - generic [ref=e197]: ↕️
+                - generic [ref=e198]: Spacer
+              - button "➖ Divider" [ref=e199]:
+                - generic [ref=e201]: ➖
+                - generic [ref=e202]: Divider
+          - generic [ref=e203]:
+            - button "🖼️ Media (2)" [ref=e204]:
+              - generic [ref=e205]:
+                - generic [ref=e206]: 🖼️
+                - text: Media
+                - generic [ref=e207]: (2)
+              - img [ref=e208]
+            - generic [ref=e210]:
+              - button "🖼️ Image" [ref=e211]:
+                - generic [ref=e213]: 🖼️
+                - generic [ref=e214]: Image
+              - button "🎬 Video" [ref=e215]:
+                - generic [ref=e217]: 🎬
+                - generic [ref=e218]: Video
+      - generic [ref=e223]:
+        - generic [ref=e226]:
+          - generic [ref=e227]:
+            - button [ref=e228]:
+              - img [ref=e229]
+            - button [ref=e231]:
+              - img [ref=e232]
+          - generic [ref=e235] [cursor=pointer]:
+            - generic [ref=e236]: navbar
+            - generic [ref=e237]:
+              - generic [ref=e238]: Acme
+              - generic [ref=e239]:
+                - generic [ref=e240]: Features
+                - generic [ref=e241]: Pricing
+                - generic [ref=e242]: About
+                - button "Sign Up" [ref=e243]
+        - generic [ref=e246]:
+          - generic [ref=e247]:
+            - button [ref=e248]:
+              - img [ref=e249]
+            - button [ref=e251]:
+              - img [ref=e252]
+          - generic [ref=e255] [cursor=pointer]:
+            - generic [ref=e256]: hero
+            - generic [ref=e257]:
+              - heading "Build beautiful websites in minutes" [level=1] [ref=e258]
+              - paragraph [ref=e259]: The modern page builder that lets you create stunning pages with drag and drop.
+              - button "Get Started" [ref=e260]
+        - generic [ref=e263]:
+          - generic [ref=e264]:
+            - button [ref=e265]:
+              - img [ref=e266]
+            - button [ref=e268]:
+              - img [ref=e269]
+          - generic [ref=e272] [cursor=pointer]:
+            - generic [ref=e273]: features
+            - generic [ref=e274]:
+              - heading "Everything you need" [level=2] [ref=e275]
+              - generic [ref=e276]:
+                - generic [ref=e277]:
+                  - generic [ref=e278]: ⚡
+                  - generic [ref=e279]:
+                    - heading "Fast" [level=3] [ref=e280]
+                    - paragraph [ref=e281]: Lightning fast performance
+                - generic [ref=e282]:
+                  - generic [ref=e283]: 🎨
+                  - generic [ref=e284]:
+                    - heading "Beautiful" [level=3] [ref=e285]
+                    - paragraph [ref=e286]: Stunning designs out of the box
+                - generic [ref=e287]:
+                  - generic [ref=e288]: 📱
+                  - generic [ref=e289]:
+                    - heading "Responsive" [level=3] [ref=e290]
+                    - paragraph [ref=e291]: Looks great on every device
+        - generic [ref=e294]:
+          - generic [ref=e295]:
+            - button [ref=e296]:
+              - img [ref=e297]
+            - button [ref=e299]:
+              - img [ref=e300]
+          - generic [ref=e303] [cursor=pointer]:
+            - generic [ref=e304]: cta
+            - generic [ref=e305]:
+              - heading "Ready to get started?" [level=2] [ref=e306]
+              - paragraph [ref=e307]: Join thousands of creators building with our platform.
+              - button "Start Building" [ref=e308]
+        - generic [ref=e311]:
+          - generic [ref=e312]:
+            - button [ref=e313]:
+              - img [ref=e314]
+            - button [ref=e316]:
+              - img [ref=e317]
+          - generic [ref=e320] [cursor=pointer]:
+            - generic [ref=e321]: footer
+            - paragraph [ref=e323]: © 2026 Acme Inc. All rights reserved.
+      - complementary [ref=e327]:
+        - generic [ref=e328]: 👆
+        - paragraph [ref=e329]: Select a block
+        - paragraph [ref=e330]: Click any block on the canvas to edit its properties.
+  - status [ref=e331]

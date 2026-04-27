@@ -1,0 +1,304 @@
+- generic [ref=e3]:
+  - navigation [ref=e4]:
+    - generic [ref=e5]:
+      - generic [ref=e6]: ⬡
+      - generic [ref=e7]: Page Builder
+    - generic [ref=e8]:
+      - button [ref=e9]:
+        - img [ref=e10]
+      - button [ref=e12]:
+        - img [ref=e13]
+      - button [ref=e15]:
+        - img [ref=e16]
+    - generic [ref=e18]:
+      - generic [ref=e19]:
+        - button [disabled] [ref=e20]:
+          - img [ref=e21]
+        - button [disabled] [ref=e23]:
+          - img [ref=e24]
+      - button "Preview" [ref=e26] [cursor=pointer]
+      - button "Publish" [ref=e27] [cursor=pointer]
+  - generic [ref=e28]:
+    - complementary [ref=e29]:
+      - tablist "Builder panels" [ref=e33]:
+        - tab "Blocks" [selected] [ref=e34] [cursor=pointer]: Blocks
+        - tab "Design" [ref=e36] [cursor=pointer]
+        - tab "Templates" [ref=e37] [cursor=pointer]
+      - generic [ref=e39]:
+        - generic [ref=e40]:
+          - button "📐 Layout(6)" [ref=e41]:
+            - generic [ref=e42]:
+              - text: 📐 Layout
+              - generic [ref=e43]: (6)
+            - img [ref=e44]
+          - generic [ref=e48]:
+            - button "Card" [ref=e49] [cursor=pointer]:
+              - generic [ref=e54]: Card
+            - button "Surface" [ref=e55] [cursor=pointer]:
+              - generic [ref=e60]: Surface
+            - button "Separator" [ref=e61] [cursor=pointer]:
+              - generic [ref=e66]: Separator
+            - button "Fieldset" [ref=e67] [cursor=pointer]:
+              - generic [ref=e72]: Fieldset
+            - button "Toolbar" [ref=e73] [cursor=pointer]:
+              - generic [ref=e78]: Toolbar
+            - button "Scroll Shadow" [ref=e79] [cursor=pointer]:
+              - generic [ref=e84]: Scroll Shadow
+        - generic [ref=e85]:
+          - button "🧭 Navigation(4)" [ref=e86]:
+            - generic [ref=e87]:
+              - text: 🧭 Navigation
+              - generic [ref=e88]: (4)
+            - img [ref=e89]
+          - generic [ref=e91]:
+            - button "Tabs" [ref=e92] [cursor=pointer]:
+              - generic [ref=e99]: Tabs
+            - button "Breadcrumbs" [ref=e100] [cursor=pointer]:
+              - generic [ref=e107]: Breadcrumbs
+            - button "Pagination" [ref=e108] [cursor=pointer]:
+              - generic [ref=e115]: Pagination
+            - button "Link" [ref=e116] [cursor=pointer]:
+              - generic [ref=e123]: Link
+        - generic [ref=e124]:
+          - button "📊 Data Display(11)" [ref=e125]:
+            - generic [ref=e126]:
+              - text: 📊 Data Display
+              - generic [ref=e127]: (11)
+            - img [ref=e128]
+          - generic [ref=e130]:
+            - button "Avatar" [ref=e131] [cursor=pointer]:
+              - generic [ref=e138]: Avatar
+            - button "Badge" [ref=e139] [cursor=pointer]:
+              - generic [ref=e146]: Badge
+            - button "Chip" [ref=e147] [cursor=pointer]:
+              - generic [ref=e154]: Chip
+            - button "Keyboard Key" [ref=e155] [cursor=pointer]:
+              - generic [ref=e162]: Keyboard Key
+            - button "Table" [ref=e163] [cursor=pointer]:
+              - generic [ref=e170]: Table
+            - button "List Box" [ref=e171] [cursor=pointer]:
+              - generic [ref=e178]: List Box
+            - button "Tag Group" [ref=e179] [cursor=pointer]:
+              - generic [ref=e186]: Tag Group
+            - button "Accordion" [ref=e187] [cursor=pointer]:
+              - generic [ref=e194]: Accordion
+            - button "Disclosure" [ref=e195] [cursor=pointer]:
+              - generic [ref=e202]: Disclosure
+            - button "Disclosure Group" [ref=e203] [cursor=pointer]:
+              - generic [ref=e210]: Disclosure Group
+            - button "Skeleton" [ref=e211] [cursor=pointer]:
+              - generic [ref=e218]: Skeleton
+        - generic [ref=e219]:
+          - button "📝 Data Entry(32)" [ref=e220]:
+            - generic [ref=e221]:
+              - text: 📝 Data Entry
+              - generic [ref=e222]: (32)
+            - img [ref=e223]
+          - generic [ref=e227]:
+            - button "Button" [ref=e228] [cursor=pointer]:
+              - generic [ref=e233]: Button
+            - button "Button Group" [ref=e234] [cursor=pointer]:
+              - generic [ref=e239]: Button Group
+            - button "Toggle Button" [ref=e240] [cursor=pointer]:
+              - generic [ref=e245]: Toggle Button
+            - button "Toggle Button Group" [ref=e246] [cursor=pointer]:
+              - generic [ref=e251]: Toggle Button Group
+            - button "Text Field" [ref=e252] [cursor=pointer]:
+              - generic [ref=e257]: Text Field
+            - button "Text Area" [ref=e258] [cursor=pointer]:
+              - generic [ref=e263]: Text Area
+            - button "Input" [ref=e264] [cursor=pointer]:
+              - generic [ref=e269]: Input
+            - button "Input Group" [ref=e270] [cursor=pointer]:
+              - generic [ref=e275]: Input Group
+            - button "Input OTP" [ref=e276] [cursor=pointer]:
+              - generic [ref=e281]: Input OTP
+            - button "Number Field" [ref=e282] [cursor=pointer]:
+              - generic [ref=e287]: Number Field
+            - button "Search Field" [ref=e288] [cursor=pointer]:
+              - generic [ref=e293]: Search Field
+            - button "Select" [ref=e294] [cursor=pointer]:
+              - generic [ref=e299]: Select
+            - button "Combo Box" [ref=e300] [cursor=pointer]:
+              - generic [ref=e305]: Combo Box
+            - button "Autocomplete" [ref=e306] [cursor=pointer]:
+              - generic [ref=e311]: Autocomplete
+            - button "Checkbox" [ref=e312] [cursor=pointer]:
+              - generic [ref=e317]: Checkbox
+            - button "Checkbox Group" [ref=e318] [cursor=pointer]:
+              - generic [ref=e323]: Checkbox Group
+            - button "Radio Group" [ref=e324] [cursor=pointer]:
+              - generic [ref=e329]: Radio Group
+            - button "Switch" [ref=e330] [cursor=pointer]:
+              - generic [ref=e335]: Switch
+            - button "Slider" [ref=e336] [cursor=pointer]:
+              - generic [ref=e341]: Slider
+            - button "Date Picker" [ref=e342] [cursor=pointer]:
+              - generic [ref=e347]: Date Picker
+            - button "Date Range Picker" [ref=e348] [cursor=pointer]:
+              - generic [ref=e353]: Date Range Picker
+            - button "Date Field" [ref=e354] [cursor=pointer]:
+              - generic [ref=e359]: Date Field
+            - button "Time Field" [ref=e360] [cursor=pointer]:
+              - generic [ref=e365]: Time Field
+            - button "Calendar" [ref=e366] [cursor=pointer]:
+              - generic [ref=e371]: Calendar
+            - button "Range Calendar" [ref=e372] [cursor=pointer]:
+              - generic [ref=e377]: Range Calendar
+            - button "Color Picker" [ref=e378] [cursor=pointer]:
+              - generic [ref=e383]: Color Picker
+            - button "Color Area" [ref=e384] [cursor=pointer]:
+              - generic [ref=e389]: Color Area
+            - button "Color Slider" [ref=e390] [cursor=pointer]:
+              - generic [ref=e395]: Color Slider
+            - button "Color Field" [ref=e396] [cursor=pointer]:
+              - generic [ref=e401]: Color Field
+            - button "Color Swatch" [ref=e402] [cursor=pointer]:
+              - generic [ref=e407]: Color Swatch
+            - button "Color Swatch Picker" [ref=e408] [cursor=pointer]:
+              - generic [ref=e413]: Color Swatch Picker
+            - button "Form" [ref=e414] [cursor=pointer]:
+              - generic [ref=e419]: Form
+        - generic [ref=e420]:
+          - button "🔔 Feedback(6)" [ref=e421]:
+            - generic [ref=e422]:
+              - text: 🔔 Feedback
+              - generic [ref=e423]: (6)
+            - img [ref=e424]
+          - generic [ref=e426]:
+            - button "Alert" [ref=e427] [cursor=pointer]:
+              - generic [ref=e433]: Alert
+            - button "Toast" [ref=e434] [cursor=pointer]:
+              - generic [ref=e440]: Toast
+            - button "Progress Bar" [ref=e441] [cursor=pointer]:
+              - generic [ref=e447]: Progress Bar
+            - button "Progress Circle" [ref=e448] [cursor=pointer]:
+              - generic [ref=e454]: Progress Circle
+            - button "Meter" [ref=e455] [cursor=pointer]:
+              - generic [ref=e461]: Meter
+            - button "Spinner" [ref=e462] [cursor=pointer]:
+              - generic [ref=e468]: Spinner
+        - generic [ref=e469]:
+          - button "🪟 Overlays(6)" [ref=e470]:
+            - generic [ref=e471]:
+              - text: 🪟 Overlays
+              - generic [ref=e472]: (6)
+            - img [ref=e473]
+          - generic [ref=e475]:
+            - button "Modal" [ref=e476] [cursor=pointer]:
+              - generic [ref=e482]: Modal
+            - button "Drawer" [ref=e483] [cursor=pointer]:
+              - generic [ref=e489]: Drawer
+            - button "Alert Dialog" [ref=e490] [cursor=pointer]:
+              - generic [ref=e496]: Alert Dialog
+            - button "Popover" [ref=e497] [cursor=pointer]:
+              - generic [ref=e503]: Popover
+            - button "Tooltip" [ref=e504] [cursor=pointer]:
+              - generic [ref=e510]: Tooltip
+            - button "Dropdown" [ref=e511] [cursor=pointer]:
+              - generic [ref=e517]: Dropdown
+        - generic [ref=e518]:
+          - button "🔤 Typography(4)" [ref=e519]:
+            - generic [ref=e520]:
+              - text: 🔤 Typography
+              - generic [ref=e521]: (4)
+            - img [ref=e522]
+          - generic [ref=e524]:
+            - button "🏷️ Label" [ref=e525] [cursor=pointer]:
+              - generic [ref=e527]: 🏷️
+              - generic [ref=e529]: Label
+            - button "📝 Description" [ref=e530] [cursor=pointer]:
+              - generic [ref=e532]: 📝
+              - generic [ref=e534]: Description
+            - button "❌ Field Error" [ref=e535] [cursor=pointer]:
+              - generic [ref=e537]: ❌
+              - generic [ref=e539]: Field Error
+            - button "❌ Error Message" [ref=e540] [cursor=pointer]:
+              - generic [ref=e542]: ❌
+              - generic [ref=e544]: Error Message
+        - generic [ref=e545]:
+          - button "🔧 Utility(1)" [ref=e546]:
+            - generic [ref=e547]:
+              - text: 🔧 Utility
+              - generic [ref=e548]: (1)
+            - img [ref=e549]
+          - button "✖️ Close Button" [ref=e552] [cursor=pointer]:
+            - generic [ref=e554]: ✖️
+            - generic [ref=e556]: Close Button
+    - generic [ref=e558]:
+      - generic [ref=e559]:
+        - generic [ref=e560]:
+          - generic [ref=e561]:
+            - button [ref=e562]:
+              - img [ref=e563]
+            - button [ref=e565]:
+              - img [ref=e566]
+          - generic [ref=e569] [cursor=pointer]:
+            - generic [ref=e570]: navbar
+            - generic [ref=e571]:
+              - generic [ref=e572]: Acme
+              - generic [ref=e573]:
+                - generic [ref=e574]: Features
+                - generic [ref=e575]: Pricing
+                - generic [ref=e576]: About
+                - button "Sign Up" [ref=e577]
+        - generic [ref=e578]:
+          - generic [ref=e579]:
+            - button [ref=e580]:
+              - img [ref=e581]
+            - button [ref=e583]:
+              - img [ref=e584]
+          - generic [ref=e587] [cursor=pointer]:
+            - generic [ref=e588]: hero
+            - generic [ref=e589]:
+              - heading "Build beautiful websites in minutes" [level=1] [ref=e590]
+              - paragraph [ref=e591]: The modern page builder that lets you create stunning pages with drag and drop.
+              - button "Get Started" [ref=e592]
+        - generic [ref=e593]:
+          - generic [ref=e594]:
+            - button [ref=e595]:
+              - img [ref=e596]
+            - button [ref=e598]:
+              - img [ref=e599]
+          - generic [ref=e602] [cursor=pointer]:
+            - generic [ref=e603]: features
+            - generic [ref=e604]:
+              - heading "Everything you need" [level=2] [ref=e605]
+              - generic [ref=e606]:
+                - generic [ref=e607]:
+                  - generic [ref=e608]: ⚡
+                  - generic [ref=e609]:
+                    - heading "Fast" [level=3] [ref=e610]
+                    - paragraph [ref=e611]: Lightning fast performance
+                - generic [ref=e612]:
+                  - generic [ref=e613]: 🎨
+                  - generic [ref=e614]:
+                    - heading "Beautiful" [level=3] [ref=e615]
+                    - paragraph [ref=e616]: Stunning designs out of the box
+                - generic [ref=e617]:
+                  - generic [ref=e618]: 📱
+                  - generic [ref=e619]:
+                    - heading "Responsive" [level=3] [ref=e620]
+                    - paragraph [ref=e621]: Looks great on every device
+        - generic [ref=e622]:
+          - generic [ref=e623]:
+            - button [ref=e624]:
+              - img [ref=e625]
+            - button [ref=e627]:
+              - img [ref=e628]
+          - generic [ref=e631] [cursor=pointer]:
+            - generic [ref=e632]: cta
+            - generic [ref=e633]:
+              - heading "Ready to get started?" [level=2] [ref=e634]
+              - paragraph [ref=e635]: Join thousands of creators building with our platform.
+              - button "Start Building" [ref=e636]
+        - generic [ref=e637]:
+          - generic [ref=e638]:
+            - button [ref=e639]:
+              - img [ref=e640]
+            - button [ref=e642]:
+              - img [ref=e643]
+          - generic [ref=e646] [cursor=pointer]:
+            - generic [ref=e647]: footer
+            - paragraph [ref=e649]: © 2026 Acme Inc. All rights reserved.
+      - status [ref=e650]

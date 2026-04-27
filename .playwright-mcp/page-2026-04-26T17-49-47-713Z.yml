@@ -1,0 +1,105 @@
+- generic [ref=e3]:
+  - navigation [ref=e4]:
+    - generic [ref=e5]:
+      - generic [ref=e6]: Page Builder
+      - generic [ref=e7]:
+        - button "Preview" [ref=e8] [cursor=pointer]
+        - button "Save Changes" [ref=e9] [cursor=pointer]
+  - generic [ref=e10]:
+    - complementary [ref=e11]:
+      - generic [ref=e12]:
+        - generic [ref=e13]:
+          - button [ref=e14]:
+            - img [ref=e15]
+          - heading "Design" [level=1] [ref=e17]
+          - paragraph [ref=e18]: Differentiate the visual features of your payment page according to your brand identity.
+        - generic [ref=e19]:
+          - button "Section Titles" [ref=e20]:
+            - generic [ref=e21]: Section Titles
+            - img [ref=e22]
+          - generic [ref=e26]:
+            - button "Title Type 1" [ref=e27] [cursor=pointer]:
+              - generic [ref=e29]: Title
+              - generic [ref=e33]: Type 1
+            - button "| Title Type 2" [ref=e34] [cursor=pointer]:
+              - generic [ref=e36]:
+                - generic [ref=e37]: "|"
+                - generic [ref=e38]: Title
+              - generic [ref=e41]: Type 2
+        - generic [ref=e42]:
+          - button "Mood" [ref=e43]:
+            - generic [ref=e44]: Mood
+            - img [ref=e45]
+          - generic [ref=e49]:
+            - button "Light" [ref=e50] [cursor=pointer]:
+              - img [ref=e52]
+              - generic [ref=e55]: Light
+            - button "Dark" [ref=e56] [cursor=pointer]:
+              - img [ref=e58]
+              - generic [ref=e62]: Dark
+        - generic [ref=e63]:
+          - button "Main Color" [ref=e64]:
+            - generic [ref=e65]: Main Color
+            - img [ref=e66]
+          - generic [ref=e69]:
+            - textbox "Main color hex code" [ref=e72]: 634CF8
+            - paragraph [ref=e74]: Enter the hex code of your brand color.
+        - generic [ref=e75]:
+          - button "Background Theme" [ref=e76]:
+            - generic [ref=e77]: Background Theme
+            - img [ref=e78]
+          - generic [ref=e81]:
+            - generic [ref=e82]:
+              - button "Solid" [ref=e83] [cursor=pointer]:
+                - generic [ref=e87]: Solid
+              - button "Pattern" [ref=e88] [cursor=pointer]:
+                - img [ref=e90]
+                - generic [ref=e93]: Pattern
+              - button "Gradient" [ref=e94] [cursor=pointer]:
+                - generic [ref=e97]: Gradient
+            - generic [ref=e98]:
+              - group "Background opacity" [ref=e100]:
+                - slider "Background opacity" [ref=e104]: "15"
+              - generic [ref=e105]: "%15"
+    - main [ref=e106]:
+      - generic [ref=e107]:
+        - generic [ref=e108]:
+          - button "Typographies" [ref=e109]:
+            - generic [ref=e110]: Typographies
+            - img [ref=e111]
+          - generic [ref=e115]:
+            - button "Aa Mori" [ref=e116] [cursor=pointer]:
+              - generic [ref=e118]: Aa
+              - generic [ref=e121]: Mori
+            - button "Aa Plus Jakarta" [ref=e122] [cursor=pointer]:
+              - generic [ref=e124]: Aa
+              - generic [ref=e126]: Plus Jakarta
+            - button "Aa Space Gr..." [ref=e127] [cursor=pointer]:
+              - generic [ref=e129]: Aa
+              - generic [ref=e131]: Space Gr...
+            - button "Aa Poppins" [ref=e132] [cursor=pointer]:
+              - generic [ref=e134]: Aa
+              - generic [ref=e136]: Poppins
+            - button "Aa Gilroy" [ref=e137] [cursor=pointer]:
+              - generic [ref=e139]: Aa
+              - generic [ref=e141]: Gilroy
+            - button "Aa Sora" [ref=e142] [cursor=pointer]:
+              - generic [ref=e144]: Aa
+              - generic [ref=e146]: Sora
+        - generic [ref=e147]:
+          - button "Radius" [ref=e148]:
+            - generic [ref=e149]: Radius
+            - img [ref=e150]
+          - generic [ref=e154]:
+            - button "16" [ref=e155] [cursor=pointer]:
+              - generic [ref=e159]: "16"
+            - button "08" [ref=e160] [cursor=pointer]:
+              - generic [ref=e163]: "08"
+            - button "06" [ref=e164] [cursor=pointer]:
+              - generic [ref=e167]: "06"
+            - button "04" [ref=e168] [cursor=pointer]:
+              - generic [ref=e171]: "04"
+            - button "02" [ref=e172] [cursor=pointer]:
+              - generic [ref=e175]: "02"
+            - button "00 - Sharp" [ref=e176] [cursor=pointer]:
+              - generic [ref=e179]: 00 - Sharp

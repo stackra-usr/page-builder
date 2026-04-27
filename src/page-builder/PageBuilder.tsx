@@ -761,6 +761,7 @@ export default function PageBuilder() {
           <Canvas
             blocks={state.blocks}
             design={state.design}
+            isDragActive={activeDragId !== null}
             previewMode={state.previewMode}
             selectedBlockId={state.selectedBlockId}
             onBlockDelete={deleteBlock}

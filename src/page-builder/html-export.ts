@@ -405,7 +405,23 @@ function renderBlock(block: BlockInstance, design: DesignSettings): string {
   }
   const inner = generator(block.props, design);
   const inlineStyle = getInlineStyles(block.props);
-  return `<div data-block-id="${esc(block.id)}" data-block-type="${esc(block.type)}"${inlineStyle}>${inner}</div>`;
+  const anim = block.props._animation as string;
+  const animClass =
+    anim && anim !== "none"
+      ? ` class="pb-animate" data-animation="${esc(anim)}"`
+      : "";
+  const section = block.props._section as Record<string, string> | undefined;
+
+  let html = `<div data-block-id="${esc(block.id)}" data-block-type="${esc(block.type)}"${inlineStyle}${animClass}>${inner}</div>`;
+
+  if (section?.bgImage || section?.bgOverlay) {
+    const overlay = section?.bgOverlay
+      ? `<div style="position:absolute;inset:0;background:${esc(section.bgOverlay)}"></div>`
+      : "";
+    html = `<div style="position:relative${section?.bgImage ? `;background-image:url(${esc(section.bgImage)});background-size:cover;background-position:center` : ""}">${overlay}<div style="position:relative">${html}</div></div>`;
+  }
+
+  return html;
 }
 
 // ── Main Export Function ──
@@ -421,6 +437,96 @@ export function generateHtml(options: HtmlExportOptions): string {
   const moodClass = design.mood === "dark" ? "dark" : "light";
 
   const blocksHtml = blocks.map((b) => renderBlock(b, design)).join("\n");
+
+  // Collect animation presets used
+  const usedAnimations = new Set<string>();
+  blocks.forEach((b) => {
+    const anim = b.props._animation as string;
+    if (anim && anim !== "none") usedAnimations.add(anim);
+  });
+
+  // Animation keyframes CSS
+  const animationCSS =
+    usedAnimations.size > 0
+      ? `
+  <style>
+    .pb-animate { opacity: 0; }
+    .pb-animate.pb-visible { animation-duration: 0.6s; animation-fill-mode: forwards; }
+    ${[...usedAnimations]
+      .map((a) => {
+        const keyframes: Record<string, string> = {
+          "fade-in":
+            "@keyframes pb-fade-in { from { opacity: 0; } to { opacity: 1; } }",
+          "fade-up":
+            "@keyframes pb-fade-up { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }",
+          "fade-down":
+            "@keyframes pb-fade-down { from { opacity: 0; transform: translateY(-20px); } to { opacity: 1; transform: translateY(0); } }",
+          "slide-up":
+            "@keyframes pb-slide-up { from { transform: translateY(40px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }",
+          "slide-down":
+            "@keyframes pb-slide-down { from { transform: translateY(-40px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }",
+          "slide-left":
+            "@keyframes pb-slide-left { from { transform: translateX(40px); opacity: 0; } to { transform: translateX(0); opacity: 1; } }",
+          "slide-right":
+            "@keyframes pb-slide-right { from { transform: translateX(-40px); opacity: 0; } to { transform: translateX(0); opacity: 1; } }",
+          "zoom-in":
+            "@keyframes pb-zoom-in { from { transform: scale(0.9); opacity: 0; } to { transform: scale(1); opacity: 1; } }",
+          "zoom-out":
+            "@keyframes pb-zoom-out { from { transform: scale(1.1); opacity: 0; } to { transform: scale(1); opacity: 1; } }",
+          bounce:
+            "@keyframes pb-bounce { 0% { transform: translateY(20px); opacity: 0; } 60% { transform: translateY(-5px); opacity: 1; } 100% { transform: translateY(0); opacity: 1; } }",
+        };
+        return `${keyframes[a] || ""}\n    .pb-animate.pb-visible[data-animation="${a}"] { animation-name: pb-${a}; }`;
+      })
+      .join("\n    ")}
+  </style>`
+      : "";
+
+  // Intersection Observer script for animations
+  const animationScript =
+    usedAnimations.size > 0
+      ? `
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var observer = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('pb-visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.1 });
+      document.querySelectorAll('.pb-animate').forEach(function(el) { observer.observe(el); });
+    });
+  </script>`
+      : "";
+
+  // Form submission script
+  const hasContactForm = blocks.some((b) => b.type === "contact");
+  const formScript = hasContactForm
+    ? `
+  <script>
+    document.querySelectorAll('form[data-form-action]').forEach(function(form) {
+      form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        var data = Object.fromEntries(new FormData(form));
+        var method = form.dataset.formMethod || 'localStorage';
+        var blockId = form.dataset.blockId || 'form';
+        if (method === 'email') {
+          var email = form.dataset.formEmail || '';
+          window.location.href = 'mailto:' + email + '?subject=Form Submission&body=' + encodeURIComponent(JSON.stringify(data));
+        } else if (method === 'webhook') {
+          var url = form.dataset.formWebhook || '';
+          fetch(url, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(data) });
+          alert('Form submitted!');
+        } else {
+          localStorage.setItem('form-' + blockId, JSON.stringify(data));
+          alert('Form saved!');
+        }
+      });
+    });
+  </script>`
+    : "";
 
   return `<!DOCTYPE html>
 <html lang="en" class="${moodClass}">
@@ -450,11 +556,14 @@ export function generateHtml(options: HtmlExportOptions): string {
     img { max-width: 100%; height: auto; }
     a { color: inherit; }
   </style>
+  ${animationCSS}
   ${pageSettings.customCSS ? `<style>\n${pageSettings.customCSS}\n  </style>` : ""}
   ${pageSettings.headCode ?? ""}
 </head>
 <body>
 ${blocksHtml}
+${animationScript}
+${formScript}
 ${pageSettings.bodyCode ?? ""}
 </body>
 </html>`;

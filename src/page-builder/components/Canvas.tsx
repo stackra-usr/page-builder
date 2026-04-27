@@ -106,7 +106,15 @@ function SortableBlock({
 }
 
 // ── Drop Zone ──
-function CanvasDropZone({ id, isEmpty }: { id: string; isEmpty: boolean }) {
+function CanvasDropZone({
+  id,
+  isEmpty,
+  isDragActive,
+}: {
+  id: string;
+  isEmpty: boolean;
+  isDragActive?: boolean;
+}) {
   const { isOver, setNodeRef } = useDroppable({ id });
 
   if (isEmpty) {
@@ -149,7 +157,9 @@ function CanvasDropZone({ id, isEmpty }: { id: string; isEmpty: boolean }) {
         "transition-all duration-150 mx-4",
         isOver
           ? "h-14 rounded-lg border-2 border-dashed border-[#634CF8] bg-[#634CF8]/5 flex items-center justify-center my-1"
-          : "h-3",
+          : isDragActive
+            ? "h-8 rounded border border-dashed border-separator/60 my-0.5"
+            : "h-3",
       )}
     >
       {isOver && (
@@ -165,6 +175,7 @@ function CanvasDropZone({ id, isEmpty }: { id: string; isEmpty: boolean }) {
 export function Canvas({
   blocks,
   design,
+  isDragActive,
   previewMode,
   selectedBlockId,
   onBlockSelect,
@@ -172,6 +183,7 @@ export function Canvas({
 }: {
   blocks: BlockInstance[];
   design: DesignSettings;
+  isDragActive?: boolean;
   previewMode: "desktop" | "tablet" | "mobile";
   selectedBlockId: string | null;
   onBlockSelect: (id: string | null) => void;
@@ -272,7 +284,7 @@ export function Canvas({
                   {index === 0 && (
                     <CanvasDropZone
                       id={`drop-before-${block.id}`}
-                      isEmpty={false}
+                      isEmpty={false} isDragActive={isDragActive}
                     />
                   )}
                   <SortableBlock
@@ -284,7 +296,7 @@ export function Canvas({
                   />
                   <CanvasDropZone
                     id={`drop-after-${block.id}`}
-                    isEmpty={false}
+                    isEmpty={false} isDragActive={isDragActive}
                   />
                 </div>
               ))}

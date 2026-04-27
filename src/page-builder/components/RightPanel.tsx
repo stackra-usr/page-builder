@@ -778,6 +778,210 @@ export function RightPanel({
             />
           )}
 
+          {/* ── Section Settings (all blocks) ── */}
+          <div className="border-t border-separator/40 pt-3 mt-3">
+            <p className="text-[10px] font-bold uppercase tracking-widest text-muted/60 mb-3">
+              Section
+            </p>
+            <div className="flex flex-col gap-3">
+              <div>
+                <label className="text-[10px] font-semibold text-muted block mb-1.5">
+                  Layout
+                </label>
+                <div className="flex gap-2">
+                  {(["contained", "full-width"] as const).map((mode) => (
+                    <button
+                      key={mode}
+                      className={clsx(
+                        "flex-1 h-8 rounded-lg text-[10px] font-semibold border-2 transition-all",
+                        ((block.props._section as any)?.layout ||
+                          "contained") === mode
+                          ? "border-[#634CF8] bg-[#634CF8]/5 text-[#634CF8]"
+                          : "border-separator/40 text-muted",
+                      )}
+                      onClick={() =>
+                        set("_section", {
+                          ...((block.props._section as any) || {}),
+                          layout: mode,
+                        })
+                      }
+                    >
+                      {mode === "contained" ? "📦 Contained" : "↔️ Full Width"}
+                    </button>
+                  ))}
+                </div>
+              </div>
+              <Field
+                label="Background Image URL"
+                placeholder="https://..."
+                value={((block.props._section as any)?.bgImage as string) || ""}
+                onChange={(v) =>
+                  set("_section", {
+                    ...((block.props._section as any) || {}),
+                    bgImage: v,
+                  })
+                }
+              />
+              <div>
+                <label className="text-[10px] font-semibold text-muted block mb-1.5">
+                  Background Overlay
+                </label>
+                <div className="flex items-center gap-2">
+                  <input
+                    className="flex-1 h-8 rounded-lg border border-separator/50 bg-[#FAFAFA] dark:bg-surface px-2 text-[11px] font-mono outline-none focus:border-[#634CF8]"
+                    placeholder="rgba(0,0,0,0.5)"
+                    value={
+                      ((block.props._section as any)?.bgOverlay as string) || ""
+                    }
+                    onChange={(e) =>
+                      set("_section", {
+                        ...((block.props._section as any) || {}),
+                        bgOverlay: e.target.value,
+                      })
+                    }
+                  />
+                  <div className="relative">
+                    <div
+                      className="h-8 w-8 rounded-lg border border-separator/40"
+                      style={{
+                        backgroundColor:
+                          ((block.props._section as any)
+                            ?.bgOverlay as string) || "transparent",
+                      }}
+                    />
+                    <input
+                      className="absolute inset-0 opacity-0 cursor-pointer"
+                      type="color"
+                      value={
+                        ((block.props._section as any)?.bgOverlay as string) ||
+                        "#000000"
+                      }
+                      onChange={(e) =>
+                        set("_section", {
+                          ...((block.props._section as any) || {}),
+                          bgOverlay: e.target.value + "80",
+                        })
+                      }
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* ── Animation (all blocks) ── */}
+          <div className="border-t border-separator/40 pt-3 mt-3">
+            <p className="text-[10px] font-bold uppercase tracking-widest text-muted/60 mb-3">
+              Animation
+            </p>
+            <div className="flex flex-col gap-2">
+              <select
+                className="w-full h-9 rounded-lg border border-separator/50 bg-[#FAFAFA] dark:bg-surface px-3 text-[12px] outline-none focus:border-[#634CF8]"
+                value={(block.props._animation as string) || "none"}
+                onChange={(e) => set("_animation", e.target.value)}
+              >
+                <option value="none">None</option>
+                <option value="fade-in">Fade In</option>
+                <option value="fade-up">Fade Up</option>
+                <option value="fade-down">Fade Down</option>
+                <option value="slide-up">Slide Up</option>
+                <option value="slide-down">Slide Down</option>
+                <option value="slide-left">Slide Left</option>
+                <option value="slide-right">Slide Right</option>
+                <option value="zoom-in">Zoom In</option>
+                <option value="zoom-out">Zoom Out</option>
+                <option value="bounce">Bounce</option>
+              </select>
+            </div>
+          </div>
+
+          {/* ── Global Block (navbar/footer only) ── */}
+          {(block.type === "navbar" || block.type === "footer") && (
+            <div className="border-t border-separator/40 pt-3 mt-3">
+              <div className="flex items-center justify-between">
+                <div>
+                  <p className="text-[11px] font-semibold text-foreground">
+                    🌐 Global Block
+                  </p>
+                  <p className="text-[9px] text-muted">Appears on all pages</p>
+                </div>
+                <button
+                  className={clsx(
+                    "relative h-5 w-9 rounded-full transition-colors",
+                    block.props._global ? "bg-[#634CF8]" : "bg-muted/20",
+                  )}
+                  onClick={() => set("_global", !block.props._global)}
+                >
+                  <div
+                    className={clsx(
+                      "absolute top-0.5 h-4 w-4 rounded-full bg-white shadow-sm transition-transform",
+                      block.props._global ? "translate-x-4" : "translate-x-0.5",
+                    )}
+                  />
+                </button>
+              </div>
+            </div>
+          )}
+
+          {/* ── Form Action (contact only) ── */}
+          {block.type === "contact" && (
+            <div className="border-t border-separator/40 pt-3 mt-3">
+              <p className="text-[10px] font-bold uppercase tracking-widest text-muted/60 mb-3">
+                Form Action
+              </p>
+              <div className="flex flex-col gap-3">
+                <select
+                  className="w-full h-9 rounded-lg border border-separator/50 bg-[#FAFAFA] dark:bg-surface px-3 text-[12px] outline-none focus:border-[#634CF8]"
+                  value={
+                    ((block.props._formAction as any)?.method as string) ||
+                    "localStorage"
+                  }
+                  onChange={(e) =>
+                    set("_formAction", {
+                      ...((block.props._formAction as any) || {}),
+                      method: e.target.value,
+                    })
+                  }
+                >
+                  <option value="localStorage">💾 Save to Browser</option>
+                  <option value="email">✉️ Send Email</option>
+                  <option value="webhook">🔗 Webhook</option>
+                </select>
+                {(block.props._formAction as any)?.method === "email" && (
+                  <Field
+                    label="Email Address"
+                    placeholder="hello@example.com"
+                    value={
+                      ((block.props._formAction as any)?.email as string) || ""
+                    }
+                    onChange={(v) =>
+                      set("_formAction", {
+                        ...((block.props._formAction as any) || {}),
+                        email: v,
+                      })
+                    }
+                  />
+                )}
+                {(block.props._formAction as any)?.method === "webhook" && (
+                  <Field
+                    label="Webhook URL"
+                    placeholder="https://api.example.com/submit"
+                    value={
+                      ((block.props._formAction as any)
+                        ?.webhookUrl as string) || ""
+                    }
+                    onChange={(v) =>
+                      set("_formAction", {
+                        ...((block.props._formAction as any) || {}),
+                        webhookUrl: v,
+                      })
+                    }
+                  />
+                )}
+              </div>
+            </div>
+          )}
+
           {/* ── Style Overrides (all blocks) ── */}
           <BlockStyleEditor
             styles={(block.props._styles as BlockStyles) || {}}

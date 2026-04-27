@@ -80,13 +80,13 @@ This plan implements the 12 remaining features for the Page Builder across five 
 
 - [ ] 5. Implement section settings UI and add section/background export to HTML exporter
 
-  - [ ] 5.1 Add "Section Settings" group to `RightPanel.tsx` block properties editor
+  - [x] 5.1 Add "Section Settings" group to `RightPanel.tsx` block properties editor
     - Add layout mode toggle (contained / full-width) for every block type
     - Add background image URL text input
     - Add background overlay color picker
     - Store values in `block.props._section`
     - _Requirements: 5.1, 5.2, 5.3, 5.6_
-  - [ ] 5.2 Extend `generateHtml()` in `html-export.ts` to include section settings and background styles
+  - [x] 5.2 Extend `generateHtml()` in `html-export.ts` to include section settings and background styles
     - Wrap each block HTML in a section container with layout mode (full-width or contained)
     - Include background-image and overlay styles per block from `_section`
     - Include page-level background theme styles on `<body>`
@@ -170,7 +170,7 @@ This plan implements the 12 remaining features for the Page Builder across five 
 
 - [ ] 10. Implement improved drag-and-drop hit areas
 
-  - [ ] 10.1 Enhance `Canvas.tsx` drop zones
+  - [x] 10.1 Enhance `Canvas.tsx` drop zones
     - Pass `isDragActive` boolean from `PageBuilder.tsx` DnD state to Canvas
     - When `isDragActive` is true, expand drop zones from `h-3` to `min-h-[32px]` with smooth CSS transition
     - Enhance visual insertion indicator with prominent highlighted line and label
@@ -179,7 +179,7 @@ This plan implements the 12 remaining features for the Page Builder across five 
 
 - [ ] 11. Implement animation preview
 
-  - [ ] 11.1 Add animation dropdown to `RightPanel.tsx` block properties editor
+  - [x] 11.1 Add animation dropdown to `RightPanel.tsx` block properties editor
     - Add "Animation" dropdown for every block type with presets: none, fade-in, fade-up, fade-down, slide-up, slide-down, slide-left, slide-right, zoom-in, zoom-out, bounce
     - Store selected value in `block.props._animation`
     - Add "Preview Animation" button
@@ -189,7 +189,7 @@ This plan implements the 12 remaining features for the Page Builder across five 
     - On animation change or "Preview" click, toggle a CSS class on the block that plays the animation once
     - Use `animationend` event to clean up the class and return block to final visible state
     - _Requirements: 8.3_
-  - [ ] 11.3 Extend `generateHtml()` to include animation support in exported HTML
+  - [x] 11.3 Extend `generateHtml()` to include animation support in exported HTML
     - Include CSS `@keyframes` definitions for all used animation presets
     - Include Intersection Observer JavaScript that adds animation classes when blocks scroll into view
     - _Requirements: 8.4_
@@ -218,7 +218,7 @@ This plan implements the 12 remaining features for the Page Builder across five 
 
 - [ ] 14. Implement global header and footer
 
-  - [ ] 14.1 Add "Global Block" toggle to `RightPanel.tsx` for navbar and footer blocks
+  - [x] 14.1 Add "Global Block" toggle to `RightPanel.tsx` for navbar and footer blocks
     - Show toggle only for blocks of type "navbar" and "footer"
     - Store `_global: true` flag in block props when enabled
     - Display "Global" badge on Canvas for global blocks
@@ -240,13 +240,13 @@ This plan implements the 12 remaining features for the Page Builder across five 
 
 - [ ] 15. Implement form submission handling
 
-  - [ ] 15.1 Add "Form Action" configuration UI to `RightPanel.tsx` for contact blocks
+  - [x] 15.1 Add "Form Action" configuration UI to `RightPanel.tsx` for contact blocks
     - Show submission method selector (email, webhook, localStorage) for blocks of type "contact"
     - Show "Email Address" input when "email" is selected, store in `block.props._formAction.email`
     - Show "Webhook URL" input when "webhook" is selected, store in `block.props._formAction.webhookUrl`
     - Store method in `block.props._formAction.method`
     - _Requirements: 11.1, 11.2, 11.3, 11.4_
-  - [ ] 15.2 Extend `generateHtml()` to generate form submission JavaScript
+  - [x] 15.2 Extend `generateHtml()` to generate form submission JavaScript
     - Generate `mailto:` link construction for "email" method
     - Generate `fetch()` POST to webhook URL for "webhook" method
     - Generate `localStorage.setItem()` for "localStorage" method
@@ -284,7 +284,7 @@ This plan implements the 12 remaining features for the Page Builder across five 
     - Add "Export React" button that calls `generateReactComponent()` → `downloadReactFile()` with current page state
     - Handle download errors with toast notification and clipboard fallback
     - _Requirements: 1.6, 12.5_
-  - [ ] 17.2 Wire all new features into `PageBuilder.tsx` orchestrator
+  - [x] 17.2 Wire all new features into `PageBuilder.tsx` orchestrator
     - Ensure `useClipboard`, `useMultiSelect` hooks are connected
     - Ensure `InlineEditable` onSave flows through `updateBlockProps` with `pushHistory()`
     - Ensure section settings, animation, global block, and form action changes all trigger `pushHistory()` for undo support
